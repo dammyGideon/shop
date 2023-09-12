@@ -1,0 +1,54 @@
+my design decisions is based on repository pattern where i 
+
+**1. Define the Data Model:**
+
+   - Determine the data entities or models 
+that your application will work with. These 
+models represent the data you want to store and manipulate.
+
+**2. Create Repositories:**
+
+   - Define repositories for each data entity. 
+A repository acts as an interface between your 
+application and the data source (e.g., a database).
+ You typically create one repository per data entity.
+
+**3. Define Repository Interfaces:**
+
+   - For each repository, create an interface that 
+defines the operations (CRUD: Create, Read, Update, Delete)
+ your application needs for that entity.
+
+**4. Implement Repository Classes:**
+
+   - Create concrete implementations of the repository interfaces.
+ These classes contain the logic to interact with the data source,
+ such as using Entity Framework to access a database.
+
+**5. Dependency Injection:**
+
+   - Use a dependency injection framework or manually 
+configure dependency injection to inject repository 
+instances into your application's services or controllers.
+
+**6. Create Services or Controllers:**
+
+   - Develop application services or controllers that use the repository
+ interfaces to access and manipulate data. These services or
+ controllers should be responsible for handling business logic.
+
+**7. Use Dependency Injection:**
+
+   - Inject the necessary repository interfaces 
+into your services or controllers. This allows your 
+services to use the repository methods to interact with data.
+
+
+
+**8. Run the Application:**
+
+    - to run the application use dotnet run from the command prompt.
+
+**9. Security:**
+
+    - Implement security measures, such as authentication and authorization, to protect the application and its data.
